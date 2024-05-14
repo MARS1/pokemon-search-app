@@ -94,4 +94,4 @@
   - Ubuntu for body
   - Posten for Headers
 
-![pokemon ia flow](pokemon-ia-flow.png)
+![Pokemon IA Flow](assets/images/pokemon-ia-flow.png)
