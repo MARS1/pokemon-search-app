@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Pokémon Search App</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <section class="section">
+      <div class="container is-flex">
+         <div class="is-flex-direction-column is-align-content-center is-flex-grow-1 px-4">
+            <h1 class="title is-size-2">
+               Pokémon Search App
+            </h1>
+            <section class="block">
+               <p class="title is-size-6">
+                  Search for <strong> Pokémon </strong> Name or ID:
+               </p>
+            </section>
+            <section class="block">
+               <form action="" class="block">
+                  <input type="text" id="search-input" class="block input is-medium" placeholder="Enter pokemon name" required>
+                  <button id="search-button" class="block button is-link is-large is-fullwidth">Pokemon Go</button>
+               </form>
+            </section>
+         </div>
+         <div class="is-flex-direction-column is-align-content-center is-flex-grow-1 px-4">
+            <div class="card">
+               <div class="card-image">
+                  <figure class="image is-3by1 pokemon-banner">
+                     <img src="pokemon-cover.png" alt="Placeholder image" class="" id="sprite"/>
+                  </figure>
+               </div>
+               <div class="card-content">
+                  <div class="media">
+                     <div class="media-left">
+                        <figure class="image is-48x48">
+                           <img id="sprite-sm" src="pokemon.png" alt="Placeholder image" class="is-rounded"/>
+                        </figure>
+                     </div>
+                     <div class="media-content">
+                        <section class="block">
+                           <h3 class="title is-4">
+                              <span id="pokemon-name" class="is-capitalized">Pokemon</span> 
+                              <span id="pokemon-id" class="has-text-weight-light is-italic has-text-grey">#</span>
+                           </h3>
+                           <p class-="block"><span class="is-uppercase has-type-weight-medium">Weight: </span><span id="weight">0</span></p>
+                           <p class="block"><span class="is-uppercase has-type-weight-medium">Height: </span><span id="height">0</span></p>
+                           <div id="types" class="block"></div>
+                        </section>
+                        <section class="block">
+                           <table class="table table is-striped is-hoverable is-fullwidth">
+                              <thead>
+                                 <tr class="has-background-dark">
+                                    <th>Base</th>
+                                    <th>Stats</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>HP</td>
+                                    <td id="hp"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Attack</td>
+                                    <td id="attack"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Defense</td>
+                                    <td id="defense"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Sp. Attack</td>
+                                    <td id="special-attack"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Sp Defense</td>
+                                    <td id="special-defense"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Speed</td>
+                                    <td id="speed"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </section>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script src="script.js"></script>
+</body>
+
+</html>

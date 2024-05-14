@@ -1,0 +1,20 @@
+* {
+   transition: all ease-in-out 0.2s;
+}
+
+:root {
+   --ubuntu-regular: "Ubuntu", sans-serif;
+   --posteno-regular: "Poetsen One", serif;
+}
+
+h1, h2, h3, h4, h5, h6, strong, button {
+   font-family: var(--posteno-regular);
+}
+
+body, p {
+   font-family: var(--ubuntu-regular);
+}
+
+strong {
+   padding: 0 0.25em;
+}
