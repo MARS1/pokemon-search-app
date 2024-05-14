@@ -2,18 +2,18 @@
 
 # Introduction
 
-- Purpose of the document
-- Overview of the feature
+- Pokemon search app fetches data from an API and renders it in HTML based on a user's input of the Pokemon name or id.
 
 # System Overview
 
-- Brief description of the system
-- Explanation of the relevant parts of the system for context
+- API variables
+- DOM variables
+- Function variables
+- Event listeners
 
 # Feature Description
 
-- Detailed description of the feature
-- Purpose and benefits of the feature
+- An input field that gets the Pokemon name or id
 
 # Implementation Details
 
@@ -26,35 +26,36 @@
 
 # Event Handling
 
-- Description of event listeners involved
-- Interaction between the DOM and event listeners
+- Click function on `searchBtn`
 
 # Data Handling
 
 - Description of data flow
-- How data is fetched and stored
-- Structure of `fetchedData` array
-- Destructuring of API response
+- Data is fetched using async await
+- Structure of `fetchedData` array is destructured
+- Destructuring of API response based on the values required
 
 # Error Handling
 
-- Common errors and their handling
-- Example: Handling empty input or no matches found
+- Handling empty input or no matches found
+- Handling invalid input
+- Handling API errors
 
 # User Interface Considerations
 
-- How the feature affects the user interface
-- Elements added or changed in the UI
+- Simple input field with a button trigger
+- Display of data in HTML via card
 
 # Testing
 
-- Key scenarios to test
-- Expected outcomes for tests
+- No tests yet
 
 # Conclusion
 
-- Summary of the feature
-- Final considerations and recommendations for developers implementing the feature
+- Data on Pokemon is fetched from an API by either name or id
+- Pokemon data is rendered in HTML
+- User can search for Pokemon by name or id
+- Additional features could be sorts and filters by types and stats
 
 ## Javascript
 
